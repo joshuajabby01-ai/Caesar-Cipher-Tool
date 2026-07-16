@@ -8,3 +8,5 @@ This project implements the Caesar cipher, a substitution cipher where each lett
 - Shift values wrap around the alphabet correctly using modular arithmetic
 - Input validation for mode selection
 
+ Tech Stack
+- **Language:** Python (standard library only — no dependencies)
