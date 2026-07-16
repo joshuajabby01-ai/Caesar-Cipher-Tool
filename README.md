@@ -10,3 +10,9 @@ This project implements the Caesar cipher, a substitution cipher where each lett
 
  Tech Stack
 - **Language:** Python (standard library only — no dependencies)
+
+ Usage
+```bash
+git clone https://github.com/yourusername/caesar-cipher.git
+cd caesar-cipher
+python caesar_cipher.py
