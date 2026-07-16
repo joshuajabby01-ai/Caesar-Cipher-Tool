@@ -67,6 +67,3 @@ Each letter is converted to its alphabet position (0–25), shifted by the given
 
 ## 🧠 What I Learned
 Working with character encoding (`ord`/`chr`), modular arithmetic for wraparound logic, and handling edge cases like mixed-case text and non-alphabetic characters cleanly.
-
-## 📄 License
-MIT
