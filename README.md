@@ -17,14 +17,14 @@ git clone https://github.com/yourusername/caesar-cipher.git
 cd caesar-cipher
 python caesar_cipher.py
 
-Example run:
+## Example run:
 === Caesar Cipher ===
 Mode (encrypt/decrypt): encrypt
 Enter text: Hello, World!
 Enter shift (1-25): 3
 Result: Khoor, Zruog!
 
-💻 Code
+## 💻 Code
 
 ```python
 def caesar_cipher(text, shift, mode='encrypt'):
@@ -62,4 +62,11 @@ if __name__ == "__main__":
     main()
 ```
 
+## 🧠 How It Works
+Each letter is converted to its alphabet position (0–25), shifted by the given amount, and wrapped using the modulo operator so the shift loops back around from Z to A. Decryption simply reverses the shift. The `ord()`/`chr()` functions handle the letter-to-number conversion while keeping the original case intact.
 
+## 🧠 What I Learned
+Working with character encoding (`ord`/`chr`), modular arithmetic for wraparound logic, and handling edge cases like mixed-case text and non-alphabetic characters cleanly.
+
+## 📄 License
+MIT
