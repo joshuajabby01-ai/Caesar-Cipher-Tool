@@ -23,3 +23,43 @@ Mode (encrypt/decrypt): encrypt
 Enter text: Hello, World!
 Enter shift (1-25): 3
 Result: Khoor, Zruog!
+
+💻 Code
+
+```python
+def caesar_cipher(text, shift, mode='encrypt'):
+    if mode == 'decrypt':
+        shift = -shift
+
+    result = []
+    for char in text:
+        if char.isalpha():
+            base = ord('A') if char.isupper() else ord('a')
+            shifted = (ord(char) - base + shift) % 26 + base
+            result.append(chr(shifted))
+        else:
+            result.append(char)
+
+    return ''.join(result)
+
+
+def main():
+    print("=== Caesar Cipher ===\n")
+
+    mode = input("Mode (encrypt/decrypt): ").strip().lower()
+    if mode not in ('encrypt', 'decrypt'):
+        print("Invalid mode. Choose 'encrypt' or 'decrypt'.")
+        return
+
+    text = input("Enter text: ")
+    shift = int(input("Enter shift (1-25): "))
+
+    output = caesar_cipher(text, shift, mode)
+    print(f"\nResult: {output}")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+
